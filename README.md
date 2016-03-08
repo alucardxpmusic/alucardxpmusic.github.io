@@ -19,4 +19,4 @@
 3. grunt
 
 ####demo:
-[demo link](alucardxpmusic.github.io/acmc) has no title attribute.
+going to [acmc](http://alucardxpmusic.github.io/acmc)!
