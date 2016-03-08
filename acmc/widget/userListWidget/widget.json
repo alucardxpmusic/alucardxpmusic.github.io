@@ -1,0 +1,7 @@
+{
+  "name": "User List Widget",
+  "javascript": "userListWidget",
+  "jsEditable": true,
+  "i18nresources": "userListWidget",
+  "pageTypes": ["product"]
+}

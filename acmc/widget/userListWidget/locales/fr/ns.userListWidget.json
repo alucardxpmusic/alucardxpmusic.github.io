@@ -1,0 +1,9 @@
+{
+  "resources": {
+	"searchWidget": "Utilisateurs Widget",
+	"searchError": "Une erreur est survenue liste des utilisateurs",
+	"searchLabel": "Utilisateurs",
+	"searchButton": "Allez!",
+	"searchResultsTitle": "Trouvé __numResults__ résultats "
+  }
+}
