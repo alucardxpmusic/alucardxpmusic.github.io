@@ -6,14 +6,14 @@
 ###project: knockoutjs + knockoutrouter + requirejs + jquery
 
 ###inspired by
-*oracle's knockout widget
-*lshift's knockout-routing Example
-*furguson's acmc project structure
+* oracle's knockout widget
+* lshift's knockout-routing Example
+* furguson's acmc project structure
 
 
 ========================
 
 ###run:
-*npm install
-*grunt all
-*grunt
+* npm install
+* grunt all
+* grunt
