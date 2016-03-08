@@ -1,4 +1,8 @@
-define(['jquery', 'knockout', 'router'], function($, ko, Router) {
+define(['knockout', 'router', 'utils'], function(ko, Router, utils) {
+
+    var templateId = 'params-template';
+    var templateSrc = 'text!app/paramPage/partials/paramPage.html';
+    var title = 'Params';
 
     var paramPage = function(param1, param2) {      //url params
 
@@ -8,17 +12,11 @@ define(['jquery', 'knockout', 'router'], function($, ko, Router) {
             this.param2 = param2;
         }
           
-        var paramModel = new ParamModel();
+        var model = new ParamModel();
 
-        require(['jquery', 'text!app/paramPage/partials/paramPage.html'], function($, template) {
-            var DomTemplate = $(template);
-            if(!$("script#"+DomTemplate[0].id).size()){
-                $('body').append(DomTemplate);
-            }
-            paramModel.loading(false);
-        });
+        utils.loadTemplate(templateId, templateSrc, model);
 
-        return new Router.Page('Params', 'params-template', paramModel);
+        return new Router.Page(title, templateId, model);
   	};
 
   	return paramPage;

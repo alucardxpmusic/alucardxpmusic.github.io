@@ -2,15 +2,16 @@ require.config({
   shim: {
   },
   paths: {
-    jquery: 'lib/jquery',
-    knockout: 'lib/knockout',
-    text: 'lib/text',
+    jquery:       'lib/jquery',
+    knockout:     'lib/knockout',
+    text:         'lib/text',
     addTemplates: 'app/commonTemplate/addTemplates',
-    register: '../widget/register',
-    injector: 'app/injector/injector',
-    homePage: 'app/homePage/modelViews/homePage',
-    errorPage: 'app/errorPage/modelViews/errorPage',
-    paramPage: 'app/paramPage/modelViews/paramPage'
+    register:     '../widget/register',
+    utils:        'app/base/utils',
+    injector:     'app/base/injector',
+    homePage:     'app/homePage/modelViews/homePage',
+    errorPage:    'app/errorPage/modelViews/errorPage',
+    paramPage:    'app/paramPage/modelViews/paramPage'
   }
 });
 

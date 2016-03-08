@@ -1,4 +1,8 @@
-define(['jquery', 'knockout', 'router'], function($, ko, Router) {
+define(['knockout', 'router', 'utils'], function(ko, Router, utils) {
+
+    var templateId = 'home-template';
+    var templateSrc = 'text!app/homePage/partials/homePage.html';
+    var title = 'Home';
 
     var homePage = function() {
 
@@ -17,17 +21,11 @@ define(['jquery', 'knockout', 'router'], function($, ko, Router) {
             this.products.push(new Product(name));
         };
         
-        var homeModel = new HomeModel();
+        var model = new HomeModel();
 
-        require(['jquery', 'text!app/homePage/partials/homePage.html'], function($, template) {
-            var DomTemplate = $(template);
-            if(!$("script#"+DomTemplate[0].id).size()){
-                $('body').append(DomTemplate);
-            }
-            homeModel.loading(false);
-        });
+        utils.loadTemplate(templateId, templateSrc, model);
 
-        return new Router.Page('Home', 'home-template', homeModel);
+        return new Router.Page(title, templateId, model);
   	};
 
   	return homePage;

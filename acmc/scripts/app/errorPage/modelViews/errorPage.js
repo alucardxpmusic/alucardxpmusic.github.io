@@ -1,4 +1,8 @@
-define(['knockout', 'router'], function(ko, Router) {
+define(['knockout', 'router', 'utils'], function(ko, Router, utils) {
+
+	var templateId = 'error-template';
+    var templateSrc = 'text!app/errorPage/partials/errorPage.html';
+    var title = 'Will it work?';
 
 	var errorPage = function() {
 
@@ -7,17 +11,11 @@ define(['knockout', 'router'], function(ko, Router) {
 			this.errorMsg = ko.observable('Deliberate error!');	//can not bind this.error=***
 		}
 
-		var errorModel = new ErrorModel();
+		var model = new ErrorModel();
 
-		require(['jquery', 'text!app/errorPage/partials/errorPage.html'], function($, template) {
-            var DomTemplate = $(template);
-            if(!$("script#"+DomTemplate[0].id).size()){
-            	$('body').append(DomTemplate);
-            }
-            errorModel.loading(false);
-        });
+		utils.loadTemplate(templateId, templateSrc, model);
 
-		return new Router.Page('Will it work?', 'error-template', errorModel);
+        return new Router.Page(title, templateId, model);
 	}
     return errorPage;
 })
