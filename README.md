@@ -19,4 +19,4 @@
 3. grunt
 
 ####demo:
-going to [acmc](http://alucardxpmusic.github.io/acmc)!
+going to [acmc](http://alucardxpmusic.github.io/acmc) demo !
