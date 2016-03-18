@@ -1,9 +1,0 @@
-{
-  "extensionID": "21999662-677a-4d33-ba0e-b8c84bdb02f5",
-  "developerID": "999999",
-  "createdBy": "*** Corp.",
-  "name": "User List Widget Extension",
-  "version": 1,
-  "timeCreated": "2015-10-21",
-  "description": "A simple widget which connects to a REST API and returns a list of users."
-}
