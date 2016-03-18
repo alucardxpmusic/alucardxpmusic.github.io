@@ -1,9 +1,0 @@
-{
-  "resources": {
-	"searchWidget": "Users Widget",
-	"searchError": "An error occurred listing users",
-	"searchLabel": "Users",
-	"searchButton": "Go!",
-	"searchResultsTitle": "Found __numResults__ Results"
-  }
-}
