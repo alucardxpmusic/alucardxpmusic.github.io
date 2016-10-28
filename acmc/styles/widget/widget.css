@@ -1,9 +1,0 @@
-/* ---------------------------------------------------------------------- */
-/*  User List Widget Styles
-/* ---------------------------------------------------------------------- */
-.user-list-widget {
-  margin: 5px;
-}
-.user-list-widget .input-group .input-group-btn button.simple-users {
-  border-radius: 0 4px 4px 0;
-}
